@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>CSS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    	/*@import url("style.css");*/
+    	@import "style.css";
+    </style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem impedit dignissimos commodi nam, quod itaque quasi soluta eveniet doloremque. Delectus quae aliquam similique, totam! Enim veniam omnis, aliquid pariatur tenetur?</p>
+	<p>Omnis nisi tenetur aspernatur molestiae possimus asperiores quas. Atque eligendi omnis illo maxime rem nemo placeat vitae sapiente aliquam totam iste dolor fugiat, dolore doloremque asperiores, incidunt officiis! Velit, accusantium!</p>
+	<p style="color:skyblue; font-size:25px;">Voluptate et ipsam accusamus ad doloremque, rem consequuntur repellendus dolorum illum nihil, totam deleniti officia maiores quasi tempora quam officiis voluptatibus labore dolorem adipisci hic fuga vitae beatae veniam! Facere.</p>
+	<p>Consequatur fugit vitae, quos vel ratione id accusamus blanditiis obcaecati deleniti ab, ut officia quaerat illum aliquid debitis natus dolorum, iste quia inventore earum! At accusantium adipisci id suscipit explicabo.</p>
+
+	<style>
+		/*ul{color:red;}*/
+		#nav{color:white;}
+		.menu{color:black;}
+		/** < tag name < class name < id name < inline style < !important*/
+	</style>
+	<!-- ul#nav>li.menu*5>{menu} -->
+	<ul id="nav">
+		<li class="menu" style="color:red;">menu</li>
+		<li class="menu">menu</li>
+		<li class="menu">menu</li>
+		<li class="menu">menu</li>
+		<li class="menu">menu</li>
+	</ul>
+
+	<!-- ul#nav1>li.menu1*5>{menu} -->
+	<style>
+		#nav1 > li{color:red;}
+		ul#nav1 > li{color:red;}
+		ul#nav1 > li > a{color:red;}
+
+		ul#nav1 a{color:blue;}
+	</style>
+	<ul id="nav1">
+			<li><a href="#">text</a></li>
+			<li>menu</li>
+			<li>menu</li>
+			<li>menu</li>
+			<li>menu</li>
+		</ul>
+
+		<header id="header">
+			<h1>logo</h1>
+			<nav id="nav">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</nav>
+		</header>	
+
+</body>
+</html>
