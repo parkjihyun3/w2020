@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				auto:true
+			});
+		});
+	</script>
+	<style>
+		body{background-image: url(../images/bg_grid.gif);}
+		.boxwrap{
+			width: 410px; _height: 210px; 
+			background-color:skyblue;
+		}
+		.boxwrap .box1,.boxwrap .box2{
+			width: 200px; height: 200px;
+			color:white;
+			float: left;
+		}
+		.boxwrap .box1{background-color: red;}
+		.boxwrap .box2{background-color: blue;}
+		.box3{height: 200px; background-color: pink;}
+		.boxwrap .clear{height: 10px; clear: both;}
+		.clearfix:after{
+			content:"";display: block; clear: both;
+		}
+		.box3:after{content:"입니다."; display: block;}
+		.box3:before{content:"핑크는"; display: block;}
+	</style>
+
+	<style>
+	.wrap1{
+		width: 1000px; margin: 10px auto;
+		background-color: ivory;
+	}
+	.pink{background-color: pink;}
+	.skyblue{background-color:skyblue;}
+
+	.wrap1 .left,.wrap1 .right{width: 100px; height: 100px;}
+	.wrap1 .left{float: left;}
+	.wrap1 .right{float: right;}
+	</style>
+
+	<style>
+	.wrap2{
+		width: 1000px; margin:0 auto;
+		background-color: red;
+	}
+	.wrap2 li{float: left; width: 20%;}
+	.wrap2 li>a{
+		display: block; text-align: center; 
+		line-height: 30px;
+	}
+	.wrap2 li>a:hover{background-color: blue; color: white;}
+	</style>
+
+	<style>
+    	.headlogo{width: 1000px; margin:0 auto;}
+    	.headlogo li{float: left; width: 100%;}
+    	.headlogo li>a{
+    		display: block; text-align: center;
+    		line-height: 30px;
+    	}
+    	.wrap3{
+    		width: 1000px; margin:0 auto;
+    		background-color: pink;
+    	}
+    	.wrap3 li{float: left; width: 20%;}
+    	.wrap3 li>a{
+    		display: block; text-align: center;
+    		line-height: 30px;
+    	}
+    	.wrap3 li>a:hover{background-color: blue; color: white;}
+    </style>
+
+    <style>
+		.headlogo2{width: 1000px; margin:0 auto;}
+		.headlogo2 li{float: left; width: 100%;}
+		.headlogo2 li>a{
+			display: block;
+			text-align: center;
+			line-height: 30px;
+		}
+
+		.wrap4{
+			background-color: skyblue;
+			width: 1000px; margin:0 auto;
+		}
+		.wrap4 li{float: left; width: 20%;}
+		.wrap4 li>a{
+			display: block; text-align: center;
+			line-height: 30px;
+		}
+		.wrap4 li>a:hover{background-color: pink; color: white;}
+
+		.sliderwrap{
+			width: 1000px; margin:0 auto; 	
+		}
+		.bx-wrapper {
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow:none;
+	    box-shadow: none;
+	    border: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="boxwrap clearfix">
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<!-- <div class="clear"></div> -->
+	</div>
+	<div class="box3">box3</div>
+
+
+	<h3>1.float</h3>
+	<div class="wrap1 clearfix">
+		<div class="left skyblue">left</div>
+		<div class="right pink">right</div>
+	</div>
+
+	<h3>2.float nav</h3>
+	<div class="wrap2">
+		<ul class="clearfix">
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</div>
+
+	<h3>3.header</h3>
+	<div class="headlogo">
+		<ul class="clearfix">
+			<li><a href="#">logo</a></li>
+		</ul>
+	</div>
+	<div class="wrap3">
+		<ul class="clearfix">
+			<li><a href="#">menun1</a></li>
+			<li><a href="#">menun2</a></li>
+			<li><a href="#">menun3</a></li>
+			<li><a href="#">menun4</a></li>
+			<li><a href="#">menun5</a></li>
+		</ul>
+	</div>
+
+	<h3>4.float mainpage layout</h3>
+		<div class="headlogo2">
+			<ul class="clearfix">
+				<li><a href="#">logo2</a></li>
+			</ul>
+		</div>
+
+		<div class="wrap4">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</div>
+
+		<div class="sliderwrap">
+			<ul class="slider">
+				<li><img src="../images/pc01.jpg" alt=""></li>
+				<li><img src="../images/pc02.jpg" alt=""></li>
+				<li><img src="../images/pc03.jpg" alt=""></li>
+			</ul>
+		</div>
+</body>		
+</html>
