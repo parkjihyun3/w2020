@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		/*reset*/
+		*{margin: 0; padding: 0; box-sizing:border-box;}
+		a:link, a:visited{color: black;text-decoration: none;}
+		li{list-style:none;}
+
+		/*header*/
+		div.headertop{width: 980px; height: 75px; margin:0 auto;}
+		div.headertop>h1.logo{text-align: center; line-height: 75px;}
+
+		nav.gnbmenu{ background-color: #1c5da3; width: 980px; height: 45px; margin: 0 auto;}
+		nav.gnbmenu>ul:after{content:""; display: block; clear: both;}
+		nav.gnbmenu>ul>li{float: left; width: 163.333px; border-right: 1px solid #5b82aa;}
+		nav.gnbmenu>ul>li>a{color:white; display: block; text-align: center; height: 45px; line-height: 45;}		
+		nav.gnbmenu>ul>li:first-child{border-left: 1px solid #5b82aa;}
+		nav.gnbmenu>ul>li>a:hover{background-color: #233b6b;}
+
+	</style>
+</head>
+<body>
+	<div class="headertop">
+		<h1 class="logo"><a href="#">HIMEDA</a></h1>
+	</div>
+	<nav class="gnbmenu">
+		<ul>
+			<li><a href="#">MENU</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li><a href="#">MENU6</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
