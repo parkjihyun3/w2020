@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		/*reset*/
+		*{margin: 0; padding: 0;}
+		a:link, a:visited{color: #000; text-decoration:none;}
+		li{list-style:none;}
+
+		/*MENU*/
+		.navwrap{width: 1000px; background-color:skyblue; 
+			     margin:0 auto; margin-bottom: 19px;}
+		.navwrap>ul:after{content:""; display: block; clear: both;}
+		.navwrap>ul>li{float: left; width: 20%;}
+		.navwrap>ul>li>a{display: block; line-height: 50px; text-align: center;}
+		.navwrap>ul>li>a:hover{background-color:blue; color: white;}
+		/*visualwrap*/
+		div.visualwrap{background-color: orange; height: 400px;}
+	</style>
+</head>
+<body>
+	<nav class="navwrap">
+		<ul>
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+		</ul>
+	</nav>
+	<div class="visualwrap"></div>
+</body>
+</html>
